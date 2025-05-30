@@ -1,2 +1,0 @@
-# Curiosite_Tasks
-
