@@ -76,6 +76,7 @@ transform-origin:bottom center;
 
 .container {
   display: flex;
+  flex-wrap: nowrap;
   padding-top: 50px;
   justify-self: center;
   align-items: center;
@@ -107,7 +108,7 @@ transform: scale(1.1);
   font-size: 18px;
   padding-left: 8px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight:light;
+  font-weight:200;
 }
 .resume{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -131,22 +132,17 @@ transform: scale(1.1);
  
   .container{
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
   }
   .prof{
-    height:200px;
-    width:200px;
-    margin:0px 0px 0px 45px;
+   margin:0;
   }
   .text{
-   margin-top:20px;
-   margin-left:80px;
+    margin:10px 0 0 4px;
   }
   .resume{
-   margin: 20px 175px;
+    margin:10px 0 0 170px;
   }
-
-}
 @media(max-width:768px){
   .menu-toggle{
   display:block;
@@ -155,6 +151,7 @@ transform: scale(1.1);
   width:100%;
   overflow: hidden;
  }
+ 
 ul{
   display:none;
   position: absolute;
@@ -172,10 +169,20 @@ ul{
   box-sizing: border-box;
   background-color: #fff;
   box-shadow: 3px 3px 4px 0px #d2d2d2;
-  transition:all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
  }
 
 ul.active{
  display: flex;
+}
+  .text>h1{
+    font-size: 65px;
+  }
+  .text>p{
+    font-size:16px;
+  }
+    .resume{
+    margin:10px 0 0 140px;
+  }
 }
 }

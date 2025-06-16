@@ -3,4 +3,5 @@ const unorderedlist =document.getElementById('unorder')
 
     toggler.addEventListener('click',()=>{
         unorderedlist.classList.toggle('active')
-    })
+    });
+
