@@ -48,7 +48,7 @@ li a {
   font-size: 24px;
   color: black;
   font-family: "Barlow Condensed", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   text-decoration: none;
   cursor: default;
   display: inline-block;
@@ -60,9 +60,10 @@ li a::after{
   position:absolute;
   height:3px;
   width:100%;
+  border-radius: 70px;
   background-color: #000;
   left:0;
-  top:36px;
+  top:30px;
   bottom:0;
   transition: width 0.5s ease-in-out,transform 0.5s ease-in-out;
   transform: scaleX(0);
