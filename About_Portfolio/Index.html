@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="preload" href="./Assets/Img/BK Monogram Logo.jpeg" as="image" type="image/x-icon">
+    <link rel="preload" href="./Assets/Img/BK Monogram Logo.webp" as="image" >
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,8 +19,12 @@
 
 <body>
     <nav class="Navbar">
-        <div class="nav-brand"><a href="./Index.html">
-                <img src="Assets/Img/BK Monogram Logo.jpeg" alt="Logo"></a>
+        <div class="nav-brand">
+            <picture>
+             <source srcset="Assets/Img/BK Monogram Logo.webp" type="image/webp">
+             <a href="./Index.html">
+             <img src="Assets/Img/BK Monogram Logo.webp" as="image/webp" alt="Logo" loading="lazy"></a>
+            </picture>              
         </div>
         <ul class="ul" id="unorder">
             <li class="nav-item Active">
@@ -38,14 +42,14 @@
     <section id="Home">
         <div class="container">
             <picture>
-                <source srcset="./Assets/Img/profile-2.jpg " type="image/webp">
-                <img class="prof" src="./Assets/Img/profile-2.jpg" alt="Profile" width="250" height="250"
+                <source srcset="./Assets/Img/profile-2.webp" type="image/webp">
+                <img class="prof" src="./Assets/Img/profile-2.webp" as="image" alt="Profile" width="250" height="250"
                     loading="lazy">
             </picture>
             <div class="text">
                 <h1>Balakrishnan K</h1>
                 <p>Hi, I'm Balakrishnan From Trichy,Web-Developer And Tech Enthusiast</p>
-                <a href="./Src/Balakrishnan K (1).pdf" download="Balakrishnan.K-Resume.pdf">
+              <a id="file" href="./Src/Balakrishnan K (1).pdf" download="Balakrishnan.K-Resume.pdf">
                     <button class="resume">Resume</button></a>
             </div>
 
